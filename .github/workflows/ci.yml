@@ -13,14 +13,14 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
           cache: "pipenv"
 
       - name: Install Pipenv
         run: pip install pipenv
 
       - name: Initialize Python
-        run: pipenv --python 3.12
+        run: pipenv --python 3.11
 
       - name: Install dependencies
         run: pipenv install --deploy --dev
